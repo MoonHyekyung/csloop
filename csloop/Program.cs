@@ -33,14 +33,18 @@ namespace csloop
             string input = "감자 고구마 토마토";
             string[] inputs = input.Split(new char[] { ' ' });
 
-            foreach(var item in inputs)
+            foreach (var item in inputs)
             {
                 Console.WriteLine(item);
             }
 
             // 배열을 문자열로 변환
-            string[] array = { "감자", "고구마", "토마토", "가지"};
+            string[] array = { "감자", "고구마", "토마토", "가지" };
             Console.WriteLine(string.Join(",", array));
+
+            Console.Write("메서드 호출 전");
+            Console.SetCursorPosition(5, 5);
+            Console.Write("메서드 호출 후");
         }
     }
 }
