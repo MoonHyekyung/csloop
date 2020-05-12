@@ -18,6 +18,7 @@ namespace csloop
             }
             Console.WriteLine(count + "만큼 반복함");
 
+            /*
             string[] array = { "사과", "배", "포도", "딸기", "바나나" };
             foreach(string item in array)
             {
@@ -26,7 +27,7 @@ namespace csloop
             foreach (var item in array)
             {
                 Console.WriteLine(item);
-            }
+            }*/
 
             // 문자열 자르기 예제
             string input = "감자 고구마 토마토";
@@ -36,6 +37,10 @@ namespace csloop
             {
                 Console.WriteLine(item);
             }
+
+            // 배열을 문자열로 변환
+            string[] array = { "감자", "고구마", "토마토", "가지"};
+            Console.WriteLine(string.Join(",", array));
         }
     }
 }
