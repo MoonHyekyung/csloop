@@ -28,7 +28,14 @@ namespace csloop
                 Console.WriteLine(item);
             }
 
-            
+            // 문자열 자르기 예제
+            string input = "감자 고구마 토마토";
+            string[] inputs = input.Split(new char[] { ' ' });
+
+            foreach(var item in inputs)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }
